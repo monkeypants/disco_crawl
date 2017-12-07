@@ -1,0 +1,13 @@
+version: '2'
+services:
+  crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /src/daemon.sh
+    env_file: crawler-node.env
+    restart: always
+    # logging:
+    #   driver: none
+    #volumes:
+    #  - ./src:/src
