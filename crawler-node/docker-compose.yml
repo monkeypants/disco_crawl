@@ -1,0 +1,12 @@
+version: '2'
+services:
+  # redis:
+  #   image: redis
+  crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /src/daemon.sh
+    env_file: crawler-node.env
+    volumes:
+      - ./src:/src

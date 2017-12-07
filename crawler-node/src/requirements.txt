@@ -1,0 +1,7 @@
+scrapy
+boto3
+python-dateutil
+base58
+
+git+https://github.com/tehmaze/python-multihash.git
+git+https://github.com/koriaf/python-goose.git
