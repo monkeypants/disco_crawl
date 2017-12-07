@@ -3,3 +3,6 @@ logs/
 config/apiKey.js
 *.csv
 *.json
+.venv
+_build
+*~
