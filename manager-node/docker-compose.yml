@@ -1,0 +1,13 @@
+version: '2'
+services:
+  manager:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /src/daemon.sh
+    env_file: mgmt-node.env
+    volumes:
+      - ./src:/src
+
+# redis:
+# docker run -v /opt/redis/data:/data -p 0.0.0.0:6379:6379 -d redis --appendonly yes redis-server

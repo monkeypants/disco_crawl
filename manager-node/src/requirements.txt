@@ -1,0 +1,9 @@
+boto3
+python-dateutil
+base58
+git+https://github.com/tehmaze/python-multihash.git
+elasticsearch>=5.0.0,<6.0.0
+certifi  # for elasticsearch
+redis
+
+# psycopg2
